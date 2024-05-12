@@ -13,19 +13,16 @@ WITH_REVANCED := true
 ASCP_OFFICIAL := true
 PERF_ANIM_OVERRIDE := true
 
-PRODUCT_BRAND := Oplus
-PRODUCT_DEVICE := zephyr
-PRODUCT_MANUFACTURER := Oplus
-PRODUCT_MODEL := mt6895
 PRODUCT_NAME := custom_zephyr
+PRODUCT_DEVICE := zephyr
+PRODUCT_MANUFACTURER := OPlus
+PRODUCT_BRAND := OPlus
+PRODUCT_MODEL := mt6895
+PRODUCT_SYSTEM_NAME := zephyr
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="sys_mssi_64_cn_armv82-user 15 AP3A.240617.008 1755697740151 release-keys" \
     BuildFingerprint=OnePlus/PGKM10/OP5565:15/AP3A.240617.008/S.1f56c75-1-a469:user/release-keys \
-    DeviceName=PGKM10 \
-    DeviceProduct=PGKM10 \
-    SystemDevice=PGKM10 \
-    SystemName=PGKM10
+    DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
