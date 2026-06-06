@@ -424,10 +424,6 @@
          to enable/disable DC dimming. -->
     <string name="config_deviceDcDimmingSysfsNode">/sys/kernel/oplus_display/dimlayer_bl_en</string>
 
-    <!-- Whether WM DisplayContent supports high performance transitions
-         (lower-end devices may want to disable) -->
-    <bool name="config_deviceSupportsHighPerfTransitions">false</bool>
-
     <!-- Paths to realme's vooc charging status file -->
     <string name="config_VoocChargerStatusPaths" translatable="false">/sys/class/oplus_chg/battery/voocchg_ing</string>
 
