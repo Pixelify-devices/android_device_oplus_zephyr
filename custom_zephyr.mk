@@ -4,14 +4,19 @@
 # Inherit from the custom device configuration.
 $(call inherit-product, device/oplus/zephyr/device.mk)
 
-# Inherit from the LineageOS configuration.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from the ASCP configuration.
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
+
+ASCP_MAINTAINER := Thundergod
+WITH_BCR := false
+WITH_REVANCED := true
+ASCP_OFFICIAL := true
 
 PRODUCT_BRAND := Oplus
 PRODUCT_DEVICE := zephyr
 PRODUCT_MANUFACTURER := Oplus
 PRODUCT_MODEL := mt6895
-PRODUCT_NAME := lineage_zephyr
+PRODUCT_NAME := custom_zephyr
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
