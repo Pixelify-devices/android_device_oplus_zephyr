@@ -11,6 +11,7 @@ ASCP_MAINTAINER := Thundergod
 WITH_BCR := false
 WITH_REVANCED := true
 ASCP_OFFICIAL := true
+PERF_ANIM_OVERRIDE := true
 
 PRODUCT_BRAND := Oplus
 PRODUCT_DEVICE := zephyr
