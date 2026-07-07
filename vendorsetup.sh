@@ -6,3 +6,8 @@ git clone -b android-16-qpr2 https://github.com/Adarsh0127-Elite/android_vendor_
 echo "Cloning BCR"
 git clone https://github.com/Chaitanyakm/vendor_bcr.git vendor/bcr
 
+echo "Applying frameworks/native patches"
+cd frameworks/native
+git fetch https://github.com/oplus-mt6895/android_frameworks_native.git
+git cherry-pick 5ae7b13cc9e7359261d15ab185ee4aaeb512f754
+cd ../..
