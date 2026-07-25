@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/custom_zephyr.mk
+    $(LOCAL_DIR)/zephyr.mk

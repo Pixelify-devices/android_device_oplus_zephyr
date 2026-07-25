@@ -261,7 +261,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub 
 
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
@@ -303,8 +303,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
-    hardware/google/pixel \
+    hardware/google/pixel/pixelstats \
     hardware/google/interfaces \
+    hardware/google/pixel/power-libperfmgr \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
